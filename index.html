@@ -15,7 +15,21 @@
             console.log('плохо')
         }
     }
+</script>
+<script>
+    let a = [1, 5, 12, 4, 3];
+    let b = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let c = [3, 10, 17];
 
+    function mean(list){
+        let s = list.reduce((total, value) => total + value, 0);
+        let l = list.length;
+        return s/l
+    }
+
+    console.log(mean(a))
+    console.log(mean(b))
+    console.log(mean(c))
 </script>
 </body>
 </html>
