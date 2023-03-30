@@ -15,7 +15,7 @@
         else if (item == 'пиво') {
             console.log('плохо')
         }
-    }
+    };
 </script>
 <script>
     let a = [1, 5, 12, 4, 3];
@@ -26,7 +26,7 @@
         let s = list.reduce((total, value) => total + value, 0);
         let l = list.length;
         return s/l
-    }
+    };
 
     console.log(mean(a))
     console.log(mean(b))
@@ -43,6 +43,18 @@
     else {
         console.log('Ответ неверный. Правильный ответ - 5')
     }
+</script>
+<script>
+    let duck = {
+        name: 'Дональд',
+        color: 'белый',
+        age: '1 год',
+        toStr: function() { console.log(duck.name + ', ' + duck.color + ', ' + duck.age) },
+        say: function() { console.log('кря кря') }
+    };
+
+    duck.toStr();
+    duck.say();
 </script>
 </body>
 </html>
